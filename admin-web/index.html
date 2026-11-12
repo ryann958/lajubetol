@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laju Betol Admin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">LB</span><div><strong>Laju Betol</strong><small>Admin Console</small></div></div>
+    <nav>
+      <button class="nav-item active" data-view="overview">Overview</button>
+      <button class="nav-item" data-view="catalog">Catalog</button>
+      <button class="nav-item" data-view="orders">Orders</button>
+      <button class="nav-item" data-view="travel">Travel</button>
+      <button class="nav-item" data-view="support">Support</button>
+      <button class="nav-item" data-view="payments">Payments</button>
+      <button class="nav-item" data-view="customers">Customers</button>
+    </nav>
+    <div class="sidebar-foot"><span class="status-dot"></span><span>Local API ready</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><p class="eyebrow">OPERATIONS / TODAY</p><h1 id="page-title">Overview</h1></div><div class="top-actions"><span id="last-sync">Not synced</span><button id="refresh" class="button ghost">Refresh data</button><div class="avatar">LB</div></div></header>
+    <section id="app" class="content"></section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
